@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 100;
+}
+
+.Row_title {
+  color: #fff;
+  margin-left: 1rem;
+  display: block;
+  margin-top: 12px;
+  font-size: 21px;
+}
+
+.Row_poster {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+
+
+
+/* .Row_poster::after {
+content: url("./img/iconmonstr-arrow-24.svg");
+  position: absolute;
+  top: 40%;
+  right: 0%;
+  background-color: #fff;
+}
+
+.Row_poster::before {
+content: url("./img/iconmonstr-arrow-24.svg");
+  position: absolute;
+  top: 40%;
+  transform: rotate(-180deg);
+  height: 30px;
+  width: max-content;
+  left: 2%;
+  background-color: #fff;
+
+}
+ */
+
+
+
+
+.left-arrow{
+  position: absolute;
+  
+  top: 40%;
+  /* transform: rotate(-180deg); */
+  height: 30px;
+  /* width: max-content; */
+  left: 2%;
+  background-color: #fff;
+
+}
+
+
+
+
+
+
+
+
+.Row_poster::-webkit-scrollbar {
+  display: none;
+}
+
+.Row_img {
+  height: 11rem;
+  object-fit: contain;
+  width: 50%;
+  margin-top: 15px;
+  margin-left: 12px;
+  margin: 15px 11px 15px;
+  transition: all 0.3s linear;
+}
+
+.Row_img:hover {
+  transform: scale(1.1);
+}
+
+.Netflix_originals {
+  height: 15rem;
+  margin-top: 15px;
+  width: 10rem;
+}
+
+
+
+.img_click_container{
+  border: 1px solid white;
+  height: 50vh;
+}
+.img_click_container h1{
+  color: white;
+}

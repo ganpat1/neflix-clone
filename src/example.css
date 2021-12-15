@@ -1,0 +1,50 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    position: relative;
+}
+
+.main_model{
+    transition: all 5s linear;
+    
+
+}
+
+
+button{
+    height: 20px;
+    width: 30px;
+}
+
+.modal{
+    transition: all 5s linear;
+}
+
+
+.modal_box{
+    z-index: 1111;
+    height: 81vh;
+    width: 30%;
+    border: 1px solid black;
+    position: absolute;
+    left: 30%;
+    top: 14%;
+}
+
+.modal_left{
+    position: relative;
+}
+
+.modal_left_img{
+    height: 20rem;
+    width: 50%;
+    position: absolute;
+  /* bottom: -21%; */
+    left: 6%;
+}
