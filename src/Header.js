@@ -31,6 +31,8 @@ const Header1 = (fetchUrl) => {
     },
   };
 
+
+  
   const imgClick = (header) => {
      if (urlTrailer) {
       setUrlTrailer("");
