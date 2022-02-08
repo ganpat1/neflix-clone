@@ -5,6 +5,7 @@ import movieTrailer from "movie-trailer";
 import YouTube from "react-youtube";
 
 const baseImgUrl = "https://image.tmdb.org/t/p/original";
+// console.log(baseImgUrl);
 
 const Row = ({ title, fetchUrl, Netflix_originals }) => {
   const [getmuvies, setGetmuvies] = useState([]);
@@ -14,7 +15,6 @@ const Row = ({ title, fetchUrl, Netflix_originals }) => {
     const fetchurl = async () => {
       const getData = await axios.get(fetchUrl);
       setGetmuvies(getData.data.results);
-
       setUrlTrailer(false);
     };
     fetchurl();

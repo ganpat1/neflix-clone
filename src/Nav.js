@@ -1,15 +1,25 @@
-import React, { useState } from "react";
+import React, {useEffect, useState } from "react";
+import axios from "axios";
 import "./Nav.css";
 
-const Nav = (catagory) => {
-  const [click, setClick] = useState(catagory);
+const Nav = (fetchUrl) => {
+    const [click, setClick] = useState();
   const [abc, setAbc] = useState([]);
+
+useEffect(() => {
+ const fetchurl = async () =>{
+  const getData = await axios.get(fetchUrl);
+  console.log(getData);
+ }
+fetchurl();
+}, [fetchUrl])
 
 
 
 
   return (
     <>
+
       <div className="Navbar_main">
         <nav className="Navbar">
           <img
@@ -27,16 +37,15 @@ const Nav = (catagory) => {
               <button className="list">Recently</button>
               <button className="list">My list</button>
             </ul>
-            <div className="search_component">
+            {/* <div className="search_component">
               <input
                 type="text"
                 className="input_search"
-                onChange={(e) => setClick(e.target.value)}
-                             />
+                onChange={(e) => setClick(e.target.value)} />
               <button className="search_button" onClick={() => setAbc(click)}>
                 Click
-              </button>
-            </div>
+              </button> */}
+            {/* </div> */}
           </div>
         </nav>
       </div>
